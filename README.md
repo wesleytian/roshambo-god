@@ -16,4 +16,4 @@ java roshambo 3
 
 ![alt text](https://github.com/wesleytian/roshambo-god/blob/master/images/pic2.png "Logo Title Text 1")
 
-![alt text](roshambo-god/images/pic1.png "Logo Title Text 1")
+![alt text](https://github.com/wesleytian/roshambo-god/blob/master/images/pic3.png "Logo Title Text 1")
