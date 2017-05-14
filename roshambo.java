@@ -84,6 +84,10 @@ public class rocpapsci {
 				// Print result
 				System.out.println(utilityFunction(index, finalRes));
 			}
+			else {
+				Random random = new Random();
+				System.out.println(random.nextInt() % 3);
+			}
 		}
 	}
 
