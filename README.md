@@ -1,8 +1,18 @@
-### Roshambo
+### RoShamBo
 
 While game theorists showed that everyone playing the game rationally should play as randomly as possible (select paper, rock, and scissors each with 1/3 probability), people are terrible random number generators. If a person makes a sequence of random numbers, then conditioning a number in the sequence based on a few of the past numbers often reveals a pattern that is not random! That is, the computer can predict the next move of an opponent after watching them play for several rounds, keeping track of subsequences of choices.
 
 https://en.wikipedia.org/wiki/Rock–paper–scissors
+
+Sure, the game has a simple optimal strategy (choose a move uniformly at random), but that has little bearing on the problem at hand. First, not all the players are optimal. This changes everything. To win a tournament where some players are known to be sub-optimal, it is absolutely essential to try to detect patterns and tendencies in the play of the opponent, and then employ an appropriate counter-strategy. A match consists of several turns, and this changes the nature of the game, as was seen in the famous Iterated Prisoner's Dilemma problem.
+
+RoShamBo (and its even simpler cousin, the Penny-Matching game) is an example of a pure prediction game. The difficulty lies in everything else that is associated with opponent modeling, or trying to outwit an adversary.
+
+There is a lot of theory that can be brought to bear on the problem, including but not limited to advanced game theory (the "best-response dynamic in fictitious play"), prediction models, information theory, statistics, encryption, and even philosophical meta-theory.
+
+So what is to be gained by playing this silly little kid's game? Many other problems deal with some form of context analysis or meta-reasoning (thinking about thinking about ...). To quote Jason Hutchens, author of MegaHAL, which was probably the best pattern detector in the tournament:
+
+*A good predictive algorithm will be able to play RoShamBo very well, without being explicitly programmed to solve that task. A few applications of such algorithms are data compression, grammatical inference, speech recognition, data mining, natural language understanding, syntactic pattern recognition, speech segmentation, machine translation, text generation, spelling correction, author identification, email classification, image recognition, stock market analysis, finding structure in data, analysis of DNA sequences, analysis of music, input methods for disabled users, and playing RoShamBo!*
 
 ### Input
 ```
@@ -43,3 +53,5 @@ In response to each input of an opponent’s choice, the computer will select an
 <p align="center">
   <img src="https://github.com/wesleytian/roshambo-god/blob/master/images/pic3.png">
 </p>
+
+http://webdocs.cs.ualberta.ca/~darse/rsb-results1.html
