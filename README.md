@@ -1,26 +1,29 @@
+
+
+## Input
 ```
 javac roshambo.java
 ```
+An integer argument will be given when executing via command line that specifies the value of *k*. 
 ```
 java roshambo 1
 ```
 ```
 java roshambo 3
 ```
+The opponent’s actual choices will be given using a while loop with standard input (system.in, scanf, etc.). The opponent will provide an integer for the choice as follows:
 
-# Input
-An integer argument will be given when executing via command line that specifies the value of *k*. The opponent’s actual choices will be given using a while loop with standard input (system.in, scanf, etc.). The opponent will provide an integer for the choice as follows:
 * 0 = Rock
 * 1 = Paper
 * 2 = Scissors
 
-# Output
+### Output
 In response to each input of an opponent’s choice, the computer will select an item for standard output (print, println, printf, etc.). The item selected is determined by the the one that will yield the greatest utility, calculated by:
 <p align="center">
   <img src="https://github.com/wesleytian/roshambo-god/blob/master/images/pic3.png">
 </p>
 
-# Player History
+#### Player History
 
 When there is not enough known about the opponent, playing randomly is the best strategy. However, if the opponent has a pattern, then it is a good idea to choose the item that will win against the opponent’s predicted next item. This prediction becomes a probabilistic query where the opponent’s previous choices are evidence:
 
