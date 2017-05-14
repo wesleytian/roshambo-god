@@ -4,6 +4,7 @@ While game theorists showed that everyone playing the game rationally should pla
 
 https://en.wikipedia.org/wiki/Rock–paper–scissors
 
+#### Myth: Rock-Paper-Scissors is a trivial game.
 Sure, the game has a simple optimal strategy (choose a move uniformly at random), but that has little bearing on the problem at hand. First, not all the players are optimal. This changes everything. To win a tournament where some players are known to be sub-optimal, it is absolutely essential to try to detect patterns and tendencies in the play of the opponent, and then employ an appropriate counter-strategy. A match consists of several turns, and this changes the nature of the game, as was seen in the famous Iterated Prisoner's Dilemma problem.
 
 RoShamBo (and its even simpler cousin, the Penny-Matching game) is an example of a pure prediction game. The difficulty lies in everything else that is associated with opponent modeling, or trying to outwit an adversary.
@@ -13,6 +14,14 @@ There is a lot of theory that can be brought to bear on the problem, including b
 So what is to be gained by playing this silly little kid's game? Many other problems deal with some form of context analysis or meta-reasoning (thinking about thinking about ...). To quote Jason Hutchens, author of MegaHAL, which was probably the best pattern detector in the tournament:
 
 *A good predictive algorithm will be able to play RoShamBo very well, without being explicitly programmed to solve that task. A few applications of such algorithms are data compression, grammatical inference, speech recognition, data mining, natural language understanding, syntactic pattern recognition, speech segmentation, machine translation, text generation, spelling correction, author identification, email classification, image recognition, stock market analysis, finding structure in data, analysis of DNA sequences, analysis of music, input methods for disabled users, and playing RoShamBo!*
+
+#### Myth: Random (Optimal) can't be beat.
+
+The optimal strategy won't lose a match by a statistically significant margin, but it also won't win a match, regardless of how predictable the opponent is. Try winning a chess tournament by drawing every game!
+
+Moreover, the statement isn't even true in a more fundamental sense. Opportunistic strategies can be theoretically better, having positive expectation under more realistic assumptions. People interested in advanced game theory may enjoy the recent book "The Theory of Learning in Games" by Fudenberg and Levine.
+
+http://webdocs.cs.ualberta.ca/~darse/rsb-results1.html
 
 ### Input
 ```
@@ -53,5 +62,3 @@ In response to each input of an opponent’s choice, the computer will select an
 <p align="center">
   <img src="https://github.com/wesleytian/roshambo-god/blob/master/images/pic3.png">
 </p>
-
-http://webdocs.cs.ualberta.ca/~darse/rsb-results1.html
