@@ -1,6 +1,6 @@
 
 
-## Input
+### Input
 ```
 javac roshambo.java
 ```
@@ -23,7 +23,7 @@ In response to each input of an opponent’s choice, the computer will select an
   <img src="https://github.com/wesleytian/roshambo-god/blob/master/images/pic3.png">
 </p>
 
-#### Player History
+### Player History
 
 When there is not enough known about the opponent, playing randomly is the best strategy. However, if the opponent has a pattern, then it is a good idea to choose the item that will win against the opponent’s predicted next item. This prediction becomes a probabilistic query where the opponent’s previous choices are evidence:
 
