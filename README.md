@@ -25,14 +25,14 @@ http://webdocs.cs.ualberta.ca/~darse/rsb-results1.html
 
 ### Input
 ```
-javac roshambo.java
+javac rocpapsci.java
 ```
 An integer argument will be given when executing via command line that specifies the value of *k*. 
 ```
-java roshambo 1
+java rocpapsci 1
 ```
 ```
-java roshambo 3
+java rocpapsci 3
 ```
 The opponent’s actual choices will be given using a while loop with standard input (system.in, scanf, etc.). The opponent will provide an integer for the choice as follows:
 
